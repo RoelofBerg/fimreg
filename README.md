@@ -1,7 +1,7 @@
-imreg
+fimreg
 =====
 
-Superefficient Variational Image Registration for Embedded Systems
+Fast Image Registration
 
 This repository will soon hold application source code for a scientific publication. The source code can be published as soon as our paper has been released to the public.
 
