@@ -1,0 +1,10 @@
+SET ADVANTECH_SCRIPTS_PATH=%ADVANTECH_LIGHTNING_PATH%\examples\script\DSPC8681E
+SET ADVANTECH_DRIVER_PATH=%ADVANTECH_LIGHTNING_PATH%\driver\x64
+
+pushd %ADVANTECH_SCRIPTS_PATH%
+call dspreset.bat
+call init_1250.bat
+popd
+
+SET BUILDCONFIG=Release
+call load_dsp_image.bat

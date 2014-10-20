@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Application">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Matlab">
+      <UniqueIdentifier>{cef309b4-764f-41ef-9163-09d9d2db1a81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PCIe">
+      <UniqueIdentifier>{13f94731-921b-4ece-8f22-d548976efecd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Matlab\Codegeneration">
+      <UniqueIdentifier>{785e8acb-f8ea-485b-90dc-6c3a73a07536}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Threadpool">
+      <UniqueIdentifier>{8ead87ec-bf8d-4295-8b83-a2869aa5ed99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HPRPC">
+      <UniqueIdentifier>{83af8674-2884-41cc-8e32-c0e360cf622b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\matlab_c_ssdRigid2D.h">
+      <Filter>Matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\matlab_jacobianOnTarget.h">
+      <Filter>Matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\matlab_sendToTarget.h">
+      <Filter>Matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\matlab_ssdOnTarget.h">
+      <Filter>Matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\matlab_startJacobianOnTarget.h">
+      <Filter>Matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\matlab_startNotifyFinishedOnTarget.h">
+      <Filter>Matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\matlab_startSsdOnTarget.h">
+      <Filter>Matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\matlab_timing_utils.h">
+      <Filter>Matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\matlab_waitUntilTargetReady.h">
+      <Filter>Matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\pseudo_stdafx.h">
+      <Filter>Matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\all.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\calcDSPLayout.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\calcMarginAddition.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\diffimg.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\fimreg_emxAPI.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\fimreg_emxutil.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\fimreg_initialize.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\fimreg_rtwutil.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\fimreg_terminate.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\fimreg_types.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\dstr_jacobian.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\dstr_ssd.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\extract.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\gaussnewton.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\gen_example_data.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\generatePyramidPC.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\get_current_time_in_sec.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\jacobian.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\jacobianOnTarget.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\mldivide.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\mod.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\mpower.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\myprintf.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\norm.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\notiifyFinishedOnTarget.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\rt_nonfinite.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\rtGetInf.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\rtGetNaN.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\rtwtypes.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\sendToTarget.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\shrinkImageDSP.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\ssd.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\ssdOnTarget.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\start_jacobianOnTarget.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\start_ssdOnTarget.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\transform.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\transmitImageData.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="matlab\codegeneration\waitUntilTargetReady.h">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="hprpc\CHPRPCCommand.h">
+      <Filter>HPRPC</Filter>
+    </ClInclude>
+    <ClInclude Include="hprpc\CHPRPCConnection.h">
+      <Filter>HPRPC</Filter>
+    </ClInclude>
+    <ClInclude Include="hprpc\CHPRPCRequest.h">
+      <Filter>HPRPC</Filter>
+    </ClInclude>
+    <ClInclude Include="hprpc\CHPRPCRequestCalcSSD.h">
+      <Filter>HPRPC</Filter>
+    </ClInclude>
+    <ClInclude Include="hprpc\CHPRPCRequestCalcSSDJacHess.h">
+      <Filter>HPRPC</Filter>
+    </ClInclude>
+    <ClInclude Include="hprpc\CHPRPCRequestStoreImg.h">
+      <Filter>HPRPC</Filter>
+    </ClInclude>
+    <ClInclude Include="hprpc\CHPRPCRequestWoPayload.h">
+      <Filter>HPRPC</Filter>
+    </ClInclude>
+    <ClInclude Include="hprpc\CHPRPCResponse.h">
+      <Filter>HPRPC</Filter>
+    </ClInclude>
+    <ClInclude Include="hprpc\CHPRPCResponseCalcSSD.h">
+      <Filter>HPRPC</Filter>
+    </ClInclude>
+    <ClInclude Include="hprpc\CHPRPCResponseCalcSSDJacHess.h">
+      <Filter>HPRPC</Filter>
+    </ClInclude>
+    <ClInclude Include="hprpc\HPRPCCommon.h">
+      <Filter>HPRPC</Filter>
+    </ClInclude>
+    <ClInclude Include="threadpool\CAutoResetEvent.h">
+      <Filter>Threadpool</Filter>
+    </ClInclude>
+    <ClInclude Include="threadpool\CThread.h">
+      <Filter>Threadpool</Filter>
+    </ClInclude>
+    <ClInclude Include="threadpool\CThreadPool.h">
+      <Filter>Threadpool</Filter>
+    </ClInclude>
+    <ClInclude Include="pcie\CBufferedWriter.h">
+      <Filter>PCIe</Filter>
+    </ClInclude>
+    <ClInclude Include="pcie\CDSPC8681.h">
+      <Filter>PCIe</Filter>
+    </ClInclude>
+    <ClInclude Include="pcie\CPCIeConnection.h">
+      <Filter>PCIe</Filter>
+    </ClInclude>
+    <ClInclude Include="pcie\ISendableBufferProvider.h">
+      <Filter>PCIe</Filter>
+    </ClInclude>
+    <ClInclude Include="CImgTransTimestamps.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="CLogger.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="CMatlabArray.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="CMatlabArrayTypedefs.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="CRegistrationController.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="CRegistrator.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="CTimePoint.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="fimreg_common.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="fimreg_exceptions.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="TimingUtils.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="hprpc\CHPRPCResponseStoreImg.h">
+      <Filter>HPRPC</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\matlab_c_ssdRigid2D.cpp">
+      <Filter>Matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\matlab_jacobianOnTarget.cpp">
+      <Filter>Matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\matlab_sendToTarget.cpp">
+      <Filter>Matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\matlab_ssdOnTarget.cpp">
+      <Filter>Matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\matlab_startJacobianOnTarget.cpp">
+      <Filter>Matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\matlab_startNotifyFinishedOnTarget.cpp">
+      <Filter>Matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\matlab_startSsdOnTarget.cpp">
+      <Filter>Matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\matlab_timing_utils.cpp">
+      <Filter>Matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\matlab_waitUntilTargetReady.cpp">
+      <Filter>Matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\all.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\calcDSPLayout.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\calcMarginAddition.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\diffimg.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\fimreg_emxAPI.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\fimreg_emxutil.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\fimreg_initialize.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\fimreg_rtwutil.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\fimreg_terminate.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\dstr_jacobian.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\dstr_ssd.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\extract.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\gaussnewton.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\gen_example_data.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\generatePyramidPC.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\get_current_time_in_sec.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\jacobian.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\jacobianOnTarget.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\mldivide.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\mod.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\mpower.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\myprintf.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\norm.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\notiifyFinishedOnTarget.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\rt_nonfinite.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\rtGetInf.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\rtGetNaN.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\sendToTarget.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\shrinkImageDSP.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\ssd.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\ssdOnTarget.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\start_jacobianOnTarget.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\start_ssdOnTarget.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\transform.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\transmitImageData.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="matlab\codegeneration\waitUntilTargetReady.cpp">
+      <Filter>Matlab\Codegeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="hprpc\CHPRPCCommand.cpp">
+      <Filter>HPRPC</Filter>
+    </ClCompile>
+    <ClCompile Include="hprpc\CHPRPCConnection.cpp">
+      <Filter>HPRPC</Filter>
+    </ClCompile>
+    <ClCompile Include="hprpc\CHPRPCRequest.cpp">
+      <Filter>HPRPC</Filter>
+    </ClCompile>
+    <ClCompile Include="hprpc\CHPRPCRequestCalcSSD.cpp">
+      <Filter>HPRPC</Filter>
+    </ClCompile>
+    <ClCompile Include="hprpc\CHPRPCRequestCalcSSDJacHess.cpp">
+      <Filter>HPRPC</Filter>
+    </ClCompile>
+    <ClCompile Include="hprpc\CHPRPCRequestStoreImg.cpp">
+      <Filter>HPRPC</Filter>
+    </ClCompile>
+    <ClCompile Include="hprpc\CHPRPCRequestWoPayload.cpp">
+      <Filter>HPRPC</Filter>
+    </ClCompile>
+    <ClCompile Include="hprpc\CHPRPCResponse.cpp">
+      <Filter>HPRPC</Filter>
+    </ClCompile>
+    <ClCompile Include="hprpc\CHPRPCResponseCalcSSD.cpp">
+      <Filter>HPRPC</Filter>
+    </ClCompile>
+    <ClCompile Include="hprpc\CHPRPCResponseCalcSSDJacHess.cpp">
+      <Filter>HPRPC</Filter>
+    </ClCompile>
+    <ClCompile Include="threadpool\CAutoResetEvent.cpp">
+      <Filter>Threadpool</Filter>
+    </ClCompile>
+    <ClCompile Include="threadpool\CThread.cpp">
+      <Filter>Threadpool</Filter>
+    </ClCompile>
+    <ClCompile Include="threadpool\CThreadPool.cpp">
+      <Filter>Threadpool</Filter>
+    </ClCompile>
+    <ClCompile Include="pcie\CBufferedWriter.cpp">
+      <Filter>PCIe</Filter>
+    </ClCompile>
+    <ClCompile Include="pcie\CDSPC8681.cpp">
+      <Filter>PCIe</Filter>
+    </ClCompile>
+    <ClCompile Include="pcie\CPCIeConnection.cpp">
+      <Filter>PCIe</Filter>
+    </ClCompile>
+    <ClCompile Include="CLogger.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="CMatlabArray.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="CRegistrationController.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="CRegistrator.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="CTimePoint.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="hprpc\CHPRPCResponseStoreImg.cpp">
+      <Filter>HPRPC</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

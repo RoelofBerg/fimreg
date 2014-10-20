@@ -1,0 +1,13 @@
+package.xdc
+Platform.xdc
+Platform.xs
+package/dspc8681dspreg.sch
+package/.vers_g180
+package/.vers_r170
+package/.vers_b160
+package/.xdc-z52
+package/dspc8681dspreg.java
+package/dspc8681dspreg.class
+package/package_dspc8681dspreg.c
+package/package.defs.h
+package/dspc8681dspreg.ccs

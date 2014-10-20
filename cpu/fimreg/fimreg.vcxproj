@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C28F6F78-B1F3-4011-8F13-692F2CA0C9D5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>fimreg</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\dev\Lightning_PCIE-Release 0.7.9.2\Lightning_PCIE\Project\LibTi667x\inc;C:\dev\Lightning_PCIE-Release 0.7.9.2\Lightning_PCIE\Project\DSPC-8681E\inc;C:\local\opencv-2.4.9\build\include\opencv;C:\local\opencv-2.4.9\build\include;C:\local\boost_1_56_0;C:\Program Files (x86)\Intel\VTune Amplifier XE 2013\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\local\boost_1_56_0\lib64-msvc-12.0;C:\local\opencv-2.4.9\build\x64\vc12\lib;C:\Program Files (x86)\Intel\VTune Amplifier XE 2013\lib64;C:\dev\Lightning_PCIE-Release 0.7.9.2\Lightning_PCIE\Project\LibTi667xShared\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\dev\Lightning_PCIE-Release 0.7.9.2\Lightning_PCIE\Project\LibTi667x\inc;C:\dev\Lightning_PCIE-Release 0.7.9.2\Lightning_PCIE\Project\DSPC-8681E\inc;C:\local\opencv-2.4.9\build\include\opencv;C:\local\opencv-2.4.9\build\include;C:\local\boost_1_56_0;C:\Program Files (x86)\Intel\VTune Amplifier XE 2013\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\local\boost_1_56_0\lib64-msvc-12.0;C:\local\opencv-2.4.9\build\x64\vc12\lib;C:\Program Files (x86)\Intel\VTune Amplifier XE 2013\lib64;C:\dev\Lightning_PCIE-Release 0.7.9.2\Lightning_PCIE\Project\LibTi667xShared\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;WHAT_ABOUT__USE_DSPC8681;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)\hprpc;$(ProjectDir)\matlab;$(ProjectDir)\matlab\codegeneration;$(ProjectDir)\pcie;$(ProjectDir)\threadpool;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opencv_core249.lib;opencv_highgui249.lib;LibTi667xShared.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;WHAT_ABOUT__USE_DSPC8681;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)\hprpc;$(ProjectDir)\matlab;$(ProjectDir)\matlab\codegeneration;$(ProjectDir)\pcie;$(ProjectDir)\threadpool;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <StringPooling>true</StringPooling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <CreateHotpatchableImage>false</CreateHotpatchableImage>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opencv_core249.lib;opencv_highgui249.lib;LibTi667xShared.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="CImgTransTimestamps.h" />
+    <ClInclude Include="CLogger.h" />
+    <ClInclude Include="CMatlabArray.h" />
+    <ClInclude Include="CMatlabArrayTypedefs.h" />
+    <ClInclude Include="CRegistrationController.h" />
+    <ClInclude Include="CRegistrator.h" />
+    <ClInclude Include="CTimePoint.h" />
+    <ClInclude Include="fimreg_common.h" />
+    <ClInclude Include="fimreg_exceptions.h" />
+    <ClInclude Include="hprpc\CHPRPCCommand.h" />
+    <ClInclude Include="hprpc\CHPRPCConnection.h" />
+    <ClInclude Include="hprpc\CHPRPCRequest.h" />
+    <ClInclude Include="hprpc\CHPRPCRequestCalcSSD.h" />
+    <ClInclude Include="hprpc\CHPRPCRequestCalcSSDJacHess.h" />
+    <ClInclude Include="hprpc\CHPRPCRequestStoreImg.h" />
+    <ClInclude Include="hprpc\CHPRPCRequestWoPayload.h" />
+    <ClInclude Include="hprpc\CHPRPCResponse.h" />
+    <ClInclude Include="hprpc\CHPRPCResponseCalcSSD.h" />
+    <ClInclude Include="hprpc\CHPRPCResponseCalcSSDJacHess.h" />
+    <ClInclude Include="hprpc\CHPRPCResponseStoreImg.h" />
+    <ClInclude Include="hprpc\HPRPCCommon.h" />
+    <ClInclude Include="matlab\codegeneration\all.h" />
+    <ClInclude Include="matlab\codegeneration\calcDSPLayout.h" />
+    <ClInclude Include="matlab\codegeneration\calcMarginAddition.h" />
+    <ClInclude Include="matlab\codegeneration\diffimg.h" />
+    <ClInclude Include="matlab\codegeneration\fimreg_emxAPI.h" />
+    <ClInclude Include="matlab\codegeneration\fimreg_emxutil.h" />
+    <ClInclude Include="matlab\codegeneration\fimreg_initialize.h" />
+    <ClInclude Include="matlab\codegeneration\fimreg_rtwutil.h" />
+    <ClInclude Include="matlab\codegeneration\fimreg_terminate.h" />
+    <ClInclude Include="matlab\codegeneration\fimreg_types.h" />
+    <ClInclude Include="matlab\codegeneration\dstr_jacobian.h" />
+    <ClInclude Include="matlab\codegeneration\dstr_ssd.h" />
+    <ClInclude Include="matlab\codegeneration\extract.h" />
+    <ClInclude Include="matlab\codegeneration\gaussnewton.h" />
+    <ClInclude Include="matlab\codegeneration\generatePyramidPC.h" />
+    <ClInclude Include="matlab\codegeneration\gen_example_data.h" />
+    <ClInclude Include="matlab\codegeneration\get_current_time_in_sec.h" />
+    <ClInclude Include="matlab\codegeneration\jacobian.h" />
+    <ClInclude Include="matlab\codegeneration\jacobianOnTarget.h" />
+    <ClInclude Include="matlab\codegeneration\mldivide.h" />
+    <ClInclude Include="matlab\codegeneration\mod.h" />
+    <ClInclude Include="matlab\codegeneration\mpower.h" />
+    <ClInclude Include="matlab\codegeneration\myprintf.h" />
+    <ClInclude Include="matlab\codegeneration\norm.h" />
+    <ClInclude Include="matlab\codegeneration\notiifyFinishedOnTarget.h" />
+    <ClInclude Include="matlab\codegeneration\rtGetInf.h" />
+    <ClInclude Include="matlab\codegeneration\rtGetNaN.h" />
+    <ClInclude Include="matlab\codegeneration\rtwtypes.h" />
+    <ClInclude Include="matlab\codegeneration\rt_nonfinite.h" />
+    <ClInclude Include="matlab\codegeneration\sendToTarget.h" />
+    <ClInclude Include="matlab\codegeneration\shrinkImageDSP.h" />
+    <ClInclude Include="matlab\codegeneration\ssd.h" />
+    <ClInclude Include="matlab\codegeneration\ssdOnTarget.h" />
+    <ClInclude Include="matlab\codegeneration\start_jacobianOnTarget.h" />
+    <ClInclude Include="matlab\codegeneration\start_ssdOnTarget.h" />
+    <ClInclude Include="matlab\codegeneration\transform.h" />
+    <ClInclude Include="matlab\codegeneration\transmitImageData.h" />
+    <ClInclude Include="matlab\codegeneration\waitUntilTargetReady.h" />
+    <ClInclude Include="matlab\matlab_c_ssdRigid2D.h" />
+    <ClInclude Include="matlab\matlab_jacobianOnTarget.h" />
+    <ClInclude Include="matlab\matlab_sendToTarget.h" />
+    <ClInclude Include="matlab\matlab_ssdOnTarget.h" />
+    <ClInclude Include="matlab\matlab_startJacobianOnTarget.h" />
+    <ClInclude Include="matlab\matlab_startNotifyFinishedOnTarget.h" />
+    <ClInclude Include="matlab\matlab_startSsdOnTarget.h" />
+    <ClInclude Include="matlab\matlab_timing_utils.h" />
+    <ClInclude Include="matlab\matlab_waitUntilTargetReady.h" />
+    <ClInclude Include="matlab\pseudo_stdafx.h" />
+    <ClInclude Include="pcie\CBufferedWriter.h" />
+    <ClInclude Include="pcie\CDSPC8681.h" />
+    <ClInclude Include="pcie\CPCIeConnection.h" />
+    <ClInclude Include="pcie\ISendableBufferProvider.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="threadpool\CAutoResetEvent.h" />
+    <ClInclude Include="threadpool\CThread.h" />
+    <ClInclude Include="threadpool\CThreadPool.h" />
+    <ClInclude Include="TimingUtils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CLogger.cpp" />
+    <ClCompile Include="CMatlabArray.cpp" />
+    <ClCompile Include="CRegistrationController.cpp" />
+    <ClCompile Include="CRegistrator.cpp" />
+    <ClCompile Include="CTimePoint.cpp" />
+    <ClCompile Include="hprpc\CHPRPCCommand.cpp" />
+    <ClCompile Include="hprpc\CHPRPCConnection.cpp" />
+    <ClCompile Include="hprpc\CHPRPCRequest.cpp" />
+    <ClCompile Include="hprpc\CHPRPCRequestCalcSSD.cpp" />
+    <ClCompile Include="hprpc\CHPRPCRequestCalcSSDJacHess.cpp" />
+    <ClCompile Include="hprpc\CHPRPCRequestStoreImg.cpp" />
+    <ClCompile Include="hprpc\CHPRPCRequestWoPayload.cpp" />
+    <ClCompile Include="hprpc\CHPRPCResponse.cpp" />
+    <ClCompile Include="hprpc\CHPRPCResponseCalcSSD.cpp" />
+    <ClCompile Include="hprpc\CHPRPCResponseCalcSSDJacHess.cpp" />
+    <ClCompile Include="hprpc\CHPRPCResponseStoreImg.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="matlab\codegeneration\all.cpp" />
+    <ClCompile Include="matlab\codegeneration\calcDSPLayout.cpp" />
+    <ClCompile Include="matlab\codegeneration\calcMarginAddition.cpp" />
+    <ClCompile Include="matlab\codegeneration\diffimg.cpp" />
+    <ClCompile Include="matlab\codegeneration\fimreg_emxAPI.cpp" />
+    <ClCompile Include="matlab\codegeneration\fimreg_emxutil.cpp" />
+    <ClCompile Include="matlab\codegeneration\fimreg_initialize.cpp" />
+    <ClCompile Include="matlab\codegeneration\fimreg_rtwutil.cpp" />
+    <ClCompile Include="matlab\codegeneration\fimreg_terminate.cpp" />
+    <ClCompile Include="matlab\codegeneration\dstr_jacobian.cpp" />
+    <ClCompile Include="matlab\codegeneration\dstr_ssd.cpp" />
+    <ClCompile Include="matlab\codegeneration\extract.cpp" />
+    <ClCompile Include="matlab\codegeneration\gaussnewton.cpp" />
+    <ClCompile Include="matlab\codegeneration\generatePyramidPC.cpp" />
+    <ClCompile Include="matlab\codegeneration\gen_example_data.cpp" />
+    <ClCompile Include="matlab\codegeneration\get_current_time_in_sec.cpp" />
+    <ClCompile Include="matlab\codegeneration\jacobian.cpp" />
+    <ClCompile Include="matlab\codegeneration\jacobianOnTarget.cpp" />
+    <ClCompile Include="matlab\codegeneration\mldivide.cpp" />
+    <ClCompile Include="matlab\codegeneration\mod.cpp" />
+    <ClCompile Include="matlab\codegeneration\mpower.cpp" />
+    <ClCompile Include="matlab\codegeneration\myprintf.cpp" />
+    <ClCompile Include="matlab\codegeneration\norm.cpp" />
+    <ClCompile Include="matlab\codegeneration\notiifyFinishedOnTarget.cpp" />
+    <ClCompile Include="matlab\codegeneration\rtGetInf.cpp" />
+    <ClCompile Include="matlab\codegeneration\rtGetNaN.cpp" />
+    <ClCompile Include="matlab\codegeneration\rt_nonfinite.cpp" />
+    <ClCompile Include="matlab\codegeneration\sendToTarget.cpp" />
+    <ClCompile Include="matlab\codegeneration\shrinkImageDSP.cpp" />
+    <ClCompile Include="matlab\codegeneration\ssd.cpp" />
+    <ClCompile Include="matlab\codegeneration\ssdOnTarget.cpp" />
+    <ClCompile Include="matlab\codegeneration\start_jacobianOnTarget.cpp" />
+    <ClCompile Include="matlab\codegeneration\start_ssdOnTarget.cpp" />
+    <ClCompile Include="matlab\codegeneration\transform.cpp" />
+    <ClCompile Include="matlab\codegeneration\transmitImageData.cpp" />
+    <ClCompile Include="matlab\codegeneration\waitUntilTargetReady.cpp" />
+    <ClCompile Include="matlab\matlab_c_ssdRigid2D.cpp" />
+    <ClCompile Include="matlab\matlab_jacobianOnTarget.cpp" />
+    <ClCompile Include="matlab\matlab_sendToTarget.cpp" />
+    <ClCompile Include="matlab\matlab_ssdOnTarget.cpp" />
+    <ClCompile Include="matlab\matlab_startJacobianOnTarget.cpp" />
+    <ClCompile Include="matlab\matlab_startNotifyFinishedOnTarget.cpp" />
+    <ClCompile Include="matlab\matlab_startSsdOnTarget.cpp" />
+    <ClCompile Include="matlab\matlab_timing_utils.cpp" />
+    <ClCompile Include="matlab\matlab_waitUntilTargetReady.cpp" />
+    <ClCompile Include="pcie\CBufferedWriter.cpp" />
+    <ClCompile Include="pcie\CDSPC8681.cpp" />
+    <ClCompile Include="pcie\CPCIeConnection.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="threadpool\CAutoResetEvent.cpp" />
+    <ClCompile Include="threadpool\CThread.cpp" />
+    <ClCompile Include="threadpool\CThreadPool.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

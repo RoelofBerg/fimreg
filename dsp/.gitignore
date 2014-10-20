@@ -1,0 +1,9 @@
+#CCS build output
+evmc6678l/master/Debug
+evmc6678l/master/Release
+evmc6678l/slave/Debug
+evmc6678l/slave/Release
+
+#CCS graphical xdcconfig
+evmc6678l/master/.config
+evmc6678l/slave/.config

@@ -1,0 +1,69 @@
+clean::
+	$(RM) package/dspc8681dspreg.sch
+	$(RM) package/.vers_g180
+	$(RM) package/.vers_r170
+	$(RM) package/.vers_b160
+	$(RM) package/.xdc-z52
+	$(RM) package/dspc8681dspreg.java
+	$(RM) package/dspc8681dspreg.class
+	$(RM) package/package_dspc8681dspreg.c
+	$(RM) package/package.defs.h
+	$(RM) package/dspc8681dspreg.ccs
+
+.interfaces: package/dspc8681dspreg.sch package/.vers_g180 package/.vers_r170 package/.vers_b160 package/.xdc-z52 package/dspc8681dspreg.java package/package_dspc8681dspreg.c package/package.defs.h package/dspc8681dspreg.ccs 
+package/package.xdc.inc: package/.vers_g180
+package/.vers_g180:
+package/package.xdc.inc: package/.vers_r170
+package/.vers_r170:
+package/package.xdc.inc: package/.vers_b160
+package/.vers_b160:
+
+.interfaces: Platform.xdc 
+
+# schema include file dependencies
+Platform.xs:
+package/package.xdc.inc: Platform.xs
+
+# schema update dependencies
+package/package.xdc.inc: Platform.xdc
+package/package.xdc.inc: xdc/IPackage.xdc
+xdc/IPackage.xdc:
+vpath xdc/IPackage.xdc $(XPKGVPATH)
+package/package.xdc.inc: xdc/platform/IPlatform.xdc
+xdc/platform/IPlatform.xdc:
+vpath xdc/platform/IPlatform.xdc $(XPKGVPATH)
+package/package.xdc.inc: xdc/platform/IPeripheral.xdc
+xdc/platform/IPeripheral.xdc:
+vpath xdc/platform/IPeripheral.xdc $(XPKGVPATH)
+package/package.xdc.inc: xdc/platform/ICpuDataSheet.xdc
+xdc/platform/ICpuDataSheet.xdc:
+vpath xdc/platform/ICpuDataSheet.xdc $(XPKGVPATH)
+package/package.xdc.inc: ti/platforms/generic/Platform.xdc
+ti/platforms/generic/Platform.xdc:
+vpath ti/platforms/generic/Platform.xdc $(XPKGVPATH)
+package/package.xdc.inc: xdc/platform/IExeContext.xdc
+xdc/platform/IExeContext.xdc:
+vpath xdc/platform/IExeContext.xdc $(XPKGVPATH)
+
+ifneq (clean,$(MAKECMDGOALS))
+C:/ti/xdctools_3_25_03_72/packages/xdc/shelf/java/js.jar:
+package/package.xdc.inc: C:/ti/xdctools_3_25_03_72/packages/xdc/shelf/java/js.jar
+C:/ti/xdctools_3_25_03_72/packages/xdc/services/intern/xsr/java/package.jar:
+package/package.xdc.inc: C:/ti/xdctools_3_25_03_72/packages/xdc/services/intern/xsr/java/package.jar
+C:/ti/xdctools_3_25_03_72/packages/xdc/services/global/java/package.jar:
+package/package.xdc.inc: C:/ti/xdctools_3_25_03_72/packages/xdc/services/global/java/package.jar
+C:/ti/xdctools_3_25_03_72/packages/xdc/shelf/java/antlr.jar:
+package/package.xdc.inc: C:/ti/xdctools_3_25_03_72/packages/xdc/shelf/java/antlr.jar
+C:/ti/xdctools_3_25_03_72/packages/xdc/services/intern/gen/java/package.jar:
+package/package.xdc.inc: C:/ti/xdctools_3_25_03_72/packages/xdc/services/intern/gen/java/package.jar
+C:/ti/xdctools_3_25_03_72/packages/xdc/shelf/java/ecj.jar:
+package/package.xdc.inc: C:/ti/xdctools_3_25_03_72/packages/xdc/shelf/java/ecj.jar
+C:/ti/xdctools_3_25_03_72/packages/xdc/shelf/java/tar.jar:
+package/package.xdc.inc: C:/ti/xdctools_3_25_03_72/packages/xdc/shelf/java/tar.jar
+C:/ti/xdctools_3_25_03_72/packages/xdc/services/spec/java/package.jar:
+package/package.xdc.inc: C:/ti/xdctools_3_25_03_72/packages/xdc/services/spec/java/package.jar
+C:/ti/xdctools_3_25_03_72/packages/xdc/services/intern/cmd/java/package.jar:
+package/package.xdc.inc: C:/ti/xdctools_3_25_03_72/packages/xdc/services/intern/cmd/java/package.jar
+endif
+# goals for files generated during schema generation but unspecified by schema's pattern rule
+

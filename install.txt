@@ -1,0 +1,78 @@
+#########################################################################################
+# Step 1: Install PC Software (Windows) #################################################
+#########################################################################################
+
+=============================
+=== INSTALL PREREQUISITES ===
+=============================
+
+Microsoft Visual Studio 2013
+Windows Driver Development Kit
+Windows SDK
+OpenCV - http://sourceforge.net/projects/opencvlibrary/
+Boost - http://sourceforge.net/projects/boost/files/boost-binaries/
+        (e.g. http://sourceforge.net/projects/boost/files/boost-binaries/1.56.0/boost_1_56_0-msvc-12.0-64.exe/download)
+DSPC-8681 Driver/SDK
+
+Include paths example: (Project properties/Configuration properties/VC++ Directories/Include Directories)
+C:\dev\Lightning_PCIE-Release 0.7.9.2\Lightning_PCIE\Project\LibTi667x\inc
+C:\dev\Lightning_PCIE-Release 0.7.9.2\Lightning_PCIE\Project\DSPC-8681E\inc
+C:\local\opencv-2.4.9\build\include\opencv
+C:\local\opencv-2.4.9\build\include
+C:\local\boost_1_56_0
+
+Library paths: (Project properties/Configuration properties/VC++ Librarz Directories)
+C:\local\boost_1_56_0\lib64-msvc-12.0
+C:\local\opencv-2.4.9\build\x64\vc12\lib
+C:\dev\Lightning_PCIE-Release 0.7.9.2\Lightning_PCIE\Project\LibTi667xShared\lib\x64
+
+Also extend the %PATH% variable (temporary or system wide) by:
+C:\local\boost_1_56_0\lib64-msvc-12.0
+C:\local\opencv-2.4.9\build\x64\vc12\bin
+C:\dev\Lightning_PCIE-Release 0.7.9.2\Lightning_PCIE\Project\LibTi667xShared\lib\x64
+
+Linker Input:
+Release and Debug:
+opencv_core249.lib;opencv_highgui249.lib;LibTi667xShared.lib;%(AdditionalDependencies)
+
+=============================
+=== BUILD CPU SOFTWARE    ===
+=============================
+
+Open <fimreg-install-folder>/cpu/fimreg.sln in Visual Studio 2013
+Select Release-Build
+Build
+(The build output will be in: <fimreg-install-folder>\cpu\x64\Release\fimreg.exe)
+
+#########################################################################################
+# Step 2: Install DSP firmware ##########################################################
+#########################################################################################
+
+=============================
+=== INSTALL PREREQUISITES ===
+=============================
+
+Download the DSPC-8681 drivers to the folder <fimreg-install-folder>/Lightning_PCIE
+This folder is already existent and a readme.txt file contains instructions how to place the Advantech files into it.
+Install the Advantec driver as written in the Advantec manual
+Install the SDK like instructed by Advantec (Install TI MCSDK, patch and build platform_lib_dspc8681 ...)
+
+=============================
+=== BUILD DSP IMAGE       ===
+=============================
+
+Open TI Code Composer Studio (CCS)
+File/Import/CodeCOmposerStudio/ExistingCCSEclipseProjects
+Select as search-directory: <fimreg-install-folder>/dsp
+Two projects should be listed: A master and a slave project, check-mark both
+Finish
+In the CCS project explorer pane right-click on the master-project:
+"build configurations / set active / release"
+Right-click again on the master-project:
+"build project"
+(The build output will be in: <fimreg-install-folder>/evmc6678l/master/Release/*.out)
+
+Right-click on the slave-project:
+"build configurations / set active / release"
+"build project"
+(The build output will be in: <fimreg-install-folder>/evmc6678l/slave/Release/*.out)

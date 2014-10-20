@@ -1,0 +1,17 @@
+dspc8681dspreg/Platform.xdc
+dspc8681dspreg/Platform.xs
+dspc8681dspreg/config.bld
+dspc8681dspreg/package/.vers_b160
+dspc8681dspreg/package/.vers_g180
+dspc8681dspreg/package/.vers_r170
+dspc8681dspreg/package/.xdc-z52
+dspc8681dspreg/package/build.cfg
+dspc8681dspreg/package/dspc8681dspreg.ccs
+dspc8681dspreg/package/dspc8681dspreg.class
+dspc8681dspreg/package/dspc8681dspreg.java
+dspc8681dspreg/package/dspc8681dspreg.sch
+dspc8681dspreg/package/package.bld.xml
+dspc8681dspreg/package/package.defs.h
+dspc8681dspreg/package/package_dspc8681dspreg.c
+dspc8681dspreg/package.bld
+dspc8681dspreg/package.xdc

@@ -1,41 +1,5 @@
 #Private files not to be shared
 private/*
 
-#Image test data (too big)
-*.bmp
-
-#OS junk files
-[Tt]humbs.db
-*.DS_Store
-
-'Matlab junk
-*.asv
-
-#Visual Studio files
-*.[Oo]bj
-*.exe
-*.pdb
-*.user
-*.aps
-*.pch
-*.vspscc
-*.vssscc
-*_i.c
-*_p.c
-*.ncb
-*.suo
-*.tlb
-*.tlh
-*.bak
-*.[Cc]ache
-*.ilk
-*.log
-*.lib
-*.sbr
-*.sdf
-ipch/
-obj/
-[Bb]in
-[Dd]ebug*/
-[Rr]elease*/
-Ankh.NoLoad
+#kdiff3
+*_bak

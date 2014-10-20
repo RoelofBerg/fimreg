@@ -1,0 +1,34 @@
+dspc8681dspreg.zip: Platform.xdc
+Platform.xdc:
+dspc8681dspreg.zip: Platform.xs
+Platform.xs:
+dspc8681dspreg.zip: config.bld
+config.bld:
+dspc8681dspreg.zip: package/.vers_b160
+package/.vers_b160:
+dspc8681dspreg.zip: package/.vers_g180
+package/.vers_g180:
+dspc8681dspreg.zip: package/.vers_r170
+package/.vers_r170:
+dspc8681dspreg.zip: package/.xdc-z52
+package/.xdc-z52:
+dspc8681dspreg.zip: package/build.cfg
+package/build.cfg:
+dspc8681dspreg.zip: package/dspc8681dspreg.ccs
+package/dspc8681dspreg.ccs:
+dspc8681dspreg.zip: package/dspc8681dspreg.class
+package/dspc8681dspreg.class:
+dspc8681dspreg.zip: package/dspc8681dspreg.java
+package/dspc8681dspreg.java:
+dspc8681dspreg.zip: package/dspc8681dspreg.sch
+package/dspc8681dspreg.sch:
+dspc8681dspreg.zip: package/package.bld.xml
+package/package.bld.xml:
+dspc8681dspreg.zip: package/package.defs.h
+package/package.defs.h:
+dspc8681dspreg.zip: package/package_dspc8681dspreg.c
+package/package_dspc8681dspreg.c:
+dspc8681dspreg.zip: package.bld
+package.bld:
+dspc8681dspreg.zip: package.xdc
+package.xdc:
