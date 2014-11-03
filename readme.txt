@@ -5,8 +5,8 @@ Fast Image Registration
 
 Performs a highly efficient Image Registration by using an Advantech DSPC-8681 PCIe expansion card. This is
 a supplementary software for our article in the Springer Journal of Realtime Image Processing with the title:
-"Highly efficient image registration using a distributed multicore DSP architecture" which is available for
-purchase at: TODO ADD LINK, CORRECT TITLE (also in readme.md)
+"Highly efficient image registration for embedded systems using a distributed multicore DSP architecture"
+which is available for purchase at: http://link.springer.com/article/10.1007/s11554-014-0457-3
 
 If you want to understand what the application does this paper is the best starting point. Please be aware
 that this software is a limited research prototype. If you need industrial quality please contact one of

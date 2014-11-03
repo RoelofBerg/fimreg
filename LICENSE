@@ -1,4 +1,16 @@
-Copyright (c) 2014, RoelofBerg
+========================================
+=== FIMREG - Fast Image Registration ===
+========================================
+
+Written by Roelof Berg, Berg Solutions (rberg@berg-solutions.de) with support from
+Lars Koenig, Fraunhofer MEVIS (lars.koenig@mevis.fraunhofer.de) Jan Ruehaak, Fraunhofer
+MEVIS (jan.ruehaak@mevis.fraunhofer.de).
+
+THIS IS A LIMITED RESEARCH PROTOTYPE. Documentation: www.berg-solutions.de/fimreg.html
+
+------------------------------------------------------------------------------
+
+Copyright (c) 2014, Roelof Berg
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
